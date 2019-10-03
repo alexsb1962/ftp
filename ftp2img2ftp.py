@@ -7,6 +7,10 @@ print('Start')
 
 
 def around(f):
+    """
+     Входной параметр - открытое ftp подключение
+    :rtype: None
+    """
     start_path=os.getcwd()
 
     dirlist = []
@@ -15,9 +19,8 @@ def around(f):
     for s in dirlist:
         #todo имена файлов могут содержать пробелы
         words=s.split() # начиная с девятого элемента выдачи list
-        fname=''
-        for w in words:
-            fname=fname+w
+        fname=s[s.find(s.split()[8]) :]
+
 
         if fname == '.': continue
         if fname == '..': continue
@@ -30,7 +33,7 @@ def around(f):
                 pass
             os.chdir(fname)
             around(f)
-            os.chdir('..')
+            os.chdir('..')Л
             f.cwd('..')
         else:
             ext = fname.split('.')[-1]
