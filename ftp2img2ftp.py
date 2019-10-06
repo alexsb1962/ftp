@@ -1,20 +1,13 @@
-
+# -*- coding: utf8 -*-
 import datetime as dt
 import os
+import sys
 import ftplib
 
 print('Start')
 
 class ftpplus( ftplib.FTP):
 
-    def listdir(self):
-        ret=[]
-        l=[]
-        self.dir(lambda s: l.append(s))
-        for s in l:
-            dir=  s[0]=='d'
-            fname = s[s.find(s.split()[8]):]
-            ret.append((dir,fname))
     # похоже отдельный класс нафиг не нужен
     pass
 
@@ -26,31 +19,37 @@ def around(f,recursive=False,mustload=False):
     """
     start_path=os.getcwd()
 
-    dirlist = []
-    f.dir(lambda s: dirlist.append(s))
 
-    for s in dirlist:
-        #todo имена файлов могут содержать пробелы
-        fname=s[s.find(s.split()[8]) :]
+    for elem in f.mlsd():
+
+        fname=''
+        fname,dict=elem
+        #fname=fname.encode('latin-1').decode('utf-8')
 
 
-        if fname == '.': continue
-        if fname == '..': continue
-        if s[0]=='d':
-            print('Рекурсивный переход в ',fname)
-            f.cwd(fname)
+        if dict['type'] == 'pdir': continue
+        if dict['type'] == 'cdir': continue
+        if dict['type']=='dir':
+            print('Рекурсивный переход в ',start_path+'\\'+fname)
+            try:
+                f.cwd(fname)
+            except:
+                print(fname,'--',len(fname))
+                print(fname.encode('latin-1').decode('utf-8'))
+                exit(0)
             try:
                 os.mkdir(fname)
             except FileExistsError:
                 pass
-            if recursive
+            if recursive:
                 os.chdir(fname)
                 around(f,recursive)
                 os.chdir('..')
                 f.cwd('..')
-        else:
+        if dict['type']=='file':
             ext = fname.split('.')[-1]
-            if ext == 'jpg' or ext == 'gif':
+            #if ext == 'jpg' or ext == 'gif':
+            if ext == 'jpg1' or ext == 'gif1':
                 # загрузка
                 with open(fname, 'wb') as fp:
                     try:
@@ -64,8 +63,16 @@ def around(f,recursive=False,mustload=False):
                         print(s)
 
 
+try:
+    f=ftplib.FTP( )
+    f.encoding = 'latin-1'
+    f.connect(host='home.dimonius.ru')
+    f.login(user='furry',passwd='letsgo')
 
-with ftplib.FTP(host='home.dimonius.ru',user='furry',passwd='letsgo' ) as f:
+    #  кодировка utf-8 в нашем случае
+    #f.encoding=sys.getfilesystemencoding()
+
+
     # корневой каталог (начало работы)
     day=dt.datetime.today()
     dirname=str(day.year)+'_'+str(day.month)+'_'+str(day.day)
@@ -75,7 +82,9 @@ with ftplib.FTP(host='home.dimonius.ru',user='furry',passwd='letsgo' ) as f:
     except  FileExistsError:
         pass
     os.chdir(dirname)
-    around(f,recursive=True,load=True)
+    around(f,recursive=True,mustload=False)
+finally:
+    print('Жопа')
 
 print('The END')
 
