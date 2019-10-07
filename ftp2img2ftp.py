@@ -64,27 +64,34 @@ def around(f,recursive=False,mustload=False):
 
 
 try:
-    f=ftplib.FTP( )
-    f.encoding = 'UTF8'
+    f=ftplib.FTP()
+    f.encoding = 'latin-1'
     f.connect(host='home.dimonius.ru')
+    #f.getwelcome()
     f.login(user='furry',passwd='letsgo')
 
     #  кодировка utf-8 в нашем случае
     #f.encoding=sys.getfilesystemencoding()
 
-    response=f.sendcmd('FEAT')
-    print(type(response))
-    print(response, 'UTF8' in response)
+    response=f.sendcmd('TYPE A')
+    print(response)
+    response=f.sendcmd('MODE Z')
+    print(response)
+    f.set_pasv(True)
 
     f.cwd('//Furry_Archive//Art//Brian Wear')
+    print('Переход')
+
+    #f.encoding='utf-8'
     names=[]
     for lst in f.mlsd():
         name,attrs=lst
         print(name)
         names.append(name)
+
     name='Другое'
     print(name==names[-1])
-
+    print('Переход на Другое')
     f.cwd(name)
     exit(0)
 
