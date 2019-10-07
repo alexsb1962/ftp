@@ -65,13 +65,28 @@ def around(f,recursive=False,mustload=False):
 
 try:
     f=ftplib.FTP( )
-    f.encoding = 'latin-1'
+    f.encoding = 'UTF8'
     f.connect(host='home.dimonius.ru')
     f.login(user='furry',passwd='letsgo')
 
     #  кодировка utf-8 в нашем случае
     #f.encoding=sys.getfilesystemencoding()
 
+    response=f.sendcmd('FEAT')
+    print(type(response))
+    print(response, 'UTF8' in response)
+
+    f.cwd('//Furry_Archive//Art//Brian Wear')
+    names=[]
+    for lst in f.mlsd():
+        name,attrs=lst
+        print(name)
+        names.append(name)
+    name='Другое'
+    print(name==names[-1])
+
+    f.cwd(name)
+    exit(0)
 
     # корневой каталог (начало работы)
     day=dt.datetime.today()
@@ -83,9 +98,9 @@ try:
         pass
     os.chdir(dirname)
     around(f,recursive=True,mustload=False)
-finally:
-    print('Жопа')
 
+finally:
+    pass
 print('The END')
 
 
