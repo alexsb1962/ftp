@@ -8,13 +8,7 @@ import ftplib
 print('Start')
 
 class ftpplus( ftplib.FTP):
-
-
-    def feat(self,func=None):
-        cmd = 'FEAT'
-        func = None
-        self.retrlines(cmd, func)
-
+    pass
 
 
 def around(f,recursive=False,mustload=False):
@@ -71,9 +65,11 @@ if __name__=="__main__":
     parser.add_argument('-u',  default='furry')
     parser.add_argument('-p',  default='letsgo')
     names=parser.parse_args()
-    print(names)
-
-    exit(0)
+    user_name=names.u
+    url=names.url
+    password=names.p
+    local=names.l
+    nlocal=names.d
 
     try:
         f=ftpplus()
@@ -96,11 +92,16 @@ if __name__=="__main__":
 
 
         # корневой каталог (начало работы)
-        if sys.argv[2]:
-            f.cwd(sys.argv[2])
-        if sys.argv[1]:
-            dirname=sys.argv[1]
-        else
+        if nlocal:
+            try:
+                f.cwd(nlocal)
+            except:
+                print('Не удалось перейти на ',nlocal)
+            finally:
+                exit(0)
+        if local:
+            dirname=local
+        else:
            day=dt.datetime.today()
            dirname=str(day.year)+'_'+str(day.month)+'_'+str(day.day)
            dirname=dirname+'_T'+str(day.hour)+'_'+str(day.minute)+'_'+str(day.second)+'_'+str(day.microsecond)
