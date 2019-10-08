@@ -8,8 +8,12 @@ print('Start')
 
 class ftpplus( ftplib.FTP):
 
-    # похоже отдельный класс нафиг не нужен
-    pass
+
+    def feat(self,func=None):
+        cmd = 'FEAT'
+        func = None
+        self.retrlines(cmd, func)
+
 
 
 def around(f,recursive=False,mustload=False):
@@ -63,35 +67,38 @@ def around(f,recursive=False,mustload=False):
                         print(s)
 
 
+
 try:
-    f=ftplib.FTP()
-    f.encoding = 'latin-1'
+
+    f=ftpplus()
+    f.encoding = 'utf-8'
     f.connect(host='home.dimonius.ru')
-    #f.getwelcome()
     f.login(user='furry',passwd='letsgo')
 
-    #  кодировка utf-8 в нашем случае
-    #f.encoding=sys.getfilesystemencoding()
-
     response=f.sendcmd('TYPE A')
-    print(response)
-    response=f.sendcmd('MODE Z')
-    print(response)
+    response=f.sendcmd('FEAT')
+    if not 'UTF8' in response:
+        print('Не найдена поддержка UTF8')
+        exit(0)
+    else:
+        print('Найдена поддержка UTF8')
+        resp = f.sendcmd('CLNT')
+        resp = f.sendcmd('OPTS UTF8 ON')
+
     f.set_pasv(True)
 
-    f.cwd('//Furry_Archive//Art//Brian Wear')
-    print('Переход')
 
-    #f.encoding='utf-8'
+    f.cwd('//Furry_Archive//Art//Brian Wear/')
+
+
+
     names=[]
     for lst in f.mlsd():
         name,attrs=lst
-        print(name)
         names.append(name)
 
-    name='Другое'
-    print(name==names[-1])
-    print('Переход на Другое')
+    name=names[-1]
+    print(name)
     f.cwd(name)
     exit(0)
 
