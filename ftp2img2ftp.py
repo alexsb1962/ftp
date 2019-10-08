@@ -112,7 +112,7 @@ if __name__=="__main__":
         os.chdir(dirname)
 
 
-        around(f,recursive=True,mustload=False)
+        around(f,recursive=True,mustload=True)
 
     finally:
         pass
