@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="b0081c07-ad32-4991-bceb-c4b0211373bb" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="b0081c07-ad32-4991-bceb-c4b0211373bb" name="Default Changelist" comment="" />
+>>>>>>> pictures
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ftp2img2ftp.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="468">
               <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
               <folding>
@@ -36,12 +41,19 @@
                 <element signature="e#1393#1666#0" />
                 <element signature="e#1434#1554#0" />
                 <element signature="e#1719#1792#0" />
+=======
+            <state relative-caret-position="497">
+              <caret line="81" column="36" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+              <folding>
+                <element signature="e#23#44#0" expanded="true" />
+>>>>>>> pictures
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://D:/anaconda/Lib/ftplib.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4500">
@@ -49,26 +61,65 @@
               <folding>
                 <element signature="e#1392#1402#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://D:/anaconda/Lib/argparse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1800">
+              <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/57359179/builtins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9378">
+              <caret line="521" column="4" selection-start-line="521" selection-start-column="4" selection-end-line="521" selection-end-column="4" />
+>>>>>>> pictures
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://D:/anaconda/Lib/encodings/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2538">
               <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+=======
+        <entry file="file://D:/anaconda/Lib/ftplib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10944">
+              <caret line="610" selection-start-line="604" selection-end-line="610" />
+              <folding>
+                <element signature="e#1392#1402#0" expanded="true" />
+              </folding>
+>>>>>>> pictures
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+>>>>>>> pictures
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="parser" />
+=======
+        <entry key="$PROJECT_DIR$" value="master" />
+>>>>>>> pictures
       </map>
     </option>
   </component>
@@ -79,6 +130,15 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="20" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+>>>>>>> pictures
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -86,6 +146,16 @@
     </navigator>
     <panes />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ftp2img2ftp.py" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+>>>>>>> pictures
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -98,6 +168,33 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="RunManager">
+    <configuration name="ftp2img2ftp" type="PythonConfigurationType" factoryName="Python">
+      <module name="ftp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\anaconda\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ftp2img2ftp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+>>>>>>> pictures
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -116,7 +213,11 @@
       <workItem from="1570461121674" duration="7493000" />
       <workItem from="1570471079268" duration="3428000" />
       <workItem from="1570476620860" duration="13671000" />
+<<<<<<< HEAD
       <workItem from="1570532903331" duration="15342000" />
+=======
+      <workItem from="1570532903331" duration="14120000" />
+>>>>>>> pictures
     </task>
     <task id="LOCAL-00001" summary="11111">
       <created>1569982661020</created>
@@ -181,6 +282,7 @@
       <option name="project" value="LOCAL" />
       <updated>1570554634093</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00010" summary="кое как параметры обработал">
       <created>1570570568741</created>
       <option name="number" value="00010" />
@@ -192,6 +294,34 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="386000" />
+=======
+    <task id="LOCAL-00010" summary="поработаем с вн. программами">
+      <created>1570578908555</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1570578908555</updated>
+    </task>
+    <task id="LOCAL-00011" summary="поработаем с вн. программами">
+      <created>1570579059670</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1570579059670</updated>
+    </task>
+    <task id="LOCAL-00012" summary="поработаем с вн. программами">
+      <created>1570579171991</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1570579171991</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="102495000" />
+>>>>>>> pictures
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -220,6 +350,7 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
+<<<<<<< HEAD
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -230,12 +361,32 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="11111" />
+    <MESSAGE value="Лечить пробелы в имени файла" />
+    <MESSAGE value="сбой после длительной работы&#10;попытка перехода по несуществующему пути" />
+    <MESSAGE value="Пробуем с имитацией загрузки" />
+    <MESSAGE value="проблемы с кодировкой русских имен" />
+    <MESSAGE value="задолбали&#10;проблемы с кодировкой русских имен" />
+    <MESSAGE value="CLNT&#10;OPTS UTF8 ON" />
+    <MESSAGE value="парсить аргументы" />
+    <MESSAGE value="поработаем с вн. программами" />
+    <option name="LAST_COMMIT_MESSAGE" value="поработаем с вн. программами" />
+  </component>
+  <component name="XDebuggerManager">
+>>>>>>> pictures
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="name" language="Python" />
       </configuration>
     </watches-manager>
   </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://D:/anaconda/Lib/argparse.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -270,16 +421,106 @@
             <element signature="e#1434#1554#0" />
             <element signature="e#1719#1792#0" />
           </folding>
+=======
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>fname=='014 014'</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>name</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dirlist</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>fname.encode('latin-1').decode('utf-8')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fname.encode('latin-1'').decode('utf-8')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fname.encode(latin-1).decode('utf-8')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fname</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fname.encode('latin-1')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fname.encode('utf-8')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(fname)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>fname.len()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dirlist</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/anaconda/Lib/ftplib.py">
+    <entry file="file://D:/anaconda/Lib/encodings/latin_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4500">
-          <caret line="252" column="35" selection-start-line="252" selection-start-column="35" selection-end-line="252" selection-end-column="35" />
-          <folding>
-            <element signature="e#1392#1402#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="342">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1795">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
         </state>
       </provider>
     </entry>
@@ -287,6 +528,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2538">
           <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/argparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/57359179/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9378">
+          <caret line="521" column="4" selection-start-line="521" selection-start-column="4" selection-end-line="521" selection-end-column="4" />
+>>>>>>> pictures
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anaconda/Lib/ftplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="4500">
+          <caret line="252" column="35" selection-start-line="252" selection-start-column="35" selection-end-line="252" selection-end-column="35" />
+=======
+        <state relative-caret-position="10944">
+          <caret line="610" selection-start-line="604" selection-end-line="610" />
+>>>>>>> pictures
+          <folding>
+            <element signature="e#1392#1402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://D:/anaconda/Lib/encodings/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2538">
+          <caret line="143" column="39" selection-start-line="143" selection-start-column="39" selection-end-line="143" selection-end-column="39" />
+=======
+    <entry file="file://$PROJECT_DIR$/ftp2img2ftp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="81" column="36" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+          <folding>
+            <element signature="e#23#44#0" expanded="true" />
+          </folding>
+>>>>>>> pictures
         </state>
       </provider>
     </entry>
